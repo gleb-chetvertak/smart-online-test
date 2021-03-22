@@ -1,0 +1,144 @@
+// ==============================================
+// Grid
+// ==============================================
+
+@mixin root-container {
+  max-width: 1370px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+// ==============================================
+// Common
+// ==============================================
+
+@mixin button($py: 15px, $px: 20px, $fz: 1rem, $isSweetalert: true) {
+  padding: $py $px;
+  border-radius: 4px;
+  font-family: $ffSec;
+  font-size: $fz;
+  line-height: .2rem + $fz;
+  letter-spacing: .8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  // font-variant: small-caps;
+  cursor: pointer;
+  transition: $tr-button-opacity;
+  &,
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    opacity: .6;
+  }
+
+  &--green {
+    border: 1px solid $col-green-1;
+    color: $col-green-1;
+    background-color: $col-green-tr-1;
+
+    @if $isSweetalert {
+      border: 1px solid $col-green-1!important;
+      color: $col-green-1!important;
+      background-color: $col-green-tr-1!important;
+      background-image: none!important;
+      box-shadow: none!important;
+    }
+  }
+
+  &--red {
+    border: 1px solid $col-red-1;
+    color: $col-red-1;
+    background-color: $col-red-tr-1;
+
+    @if $isSweetalert {
+      border: 1px solid $col-red-1!important;
+      color: $col-red-1!important;
+      background-color: $col-red-tr-1!important;
+      background-image: none!important;
+      box-shadow: none!important;
+    }
+  }
+
+  &--blue {
+    border: 1px solid $col-blue-3;
+    color: $col-blue-3;
+    background-color: $col-white;
+  }
+
+  &--orange {
+    border: 1px solid $col-orange-1;
+    color: $col-orange-1;
+    background-color: $col-orange-tr-1;
+  }
+
+  &--disabled {
+    border: 1px solid $col-gray-2;
+    color: $col-white;
+    background-color: $col-gray-3;
+    cursor: default;
+    pointer-events: none;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+@mixin form-label($mb: 5px, $ml: 5px, $fz: 14px, $c: #{$col-gray-1} ) {
+  margin-bottom: $mb;
+  margin-left: $ml;
+  font-size: $fz;
+  color: $c;
+}
+
+@mixin form-input($w: 250px, $py: 10px, $px: 15px, $mb: 15px, $fz: 12px) {
+  width: $w;
+  height: auto;
+  padding: $py $px;
+  border-radius: 4px;
+  margin-bottom: $mb;
+  box-sizing: border-box;
+  font-size: $fz;
+  line-height: $fz;
+
+  &,
+  &:focus,
+  &:disabled {
+    border: 1px solid $col-blue-3;
+    margin-bottom: $mb;
+    color: $col-gray-1;
+    box-shadow: none;
+    outline: none;
+  }
+
+  // &::placeholder {
+  //   color: $blue-4;
+  // }
+  
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+
+  &[type=number] {
+      -moz-appearance:textfield;
+  }
+
+  // &--error {
+  //   border-color: $red-2!important;
+  // }
+
+  // &--disabled {
+  //   border-color: $gray-2!important;
+  //   color: $gray-1!important;
+  // }
+}

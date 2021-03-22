@@ -9,8 +9,11 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "css-reset-and-normalize": "^2.3.5",
+    "sweetalert2": "^10.15.6",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
+    "vue-sweetalert2": "^4.2.1",
     "vuex": "^3.4.0"
   },
   "devDependencies": {

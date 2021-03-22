@@ -1,0 +1,64 @@
+// Colors
+$col-white: #FFFFFF;
+
+$col-gray-1: #333333;
+$col-gray-2: #E5E5EA;
+$col-gray-3: #C7C7CC;
+
+$col-blue-1: #F9FAFF;
+$col-blue-2: #EAF2FF;
+$col-blue-3: #2C7DFA;
+
+$col-orange-1: #FF9041;
+
+$col-green-1: #07D79C;
+
+$col-red-1: #F6576E;
+
+$col-green-tr-1: rgba(131, 235, 206, 0.3);
+
+$col-red-tr-1: rgba(251, 171, 183, 0.3);
+
+$col-orange-tr-1: rgba(255, 144, 65, 0.3);
+
+// Shadows
+$sh-1: 0px 4px 30px 6px rgba(0, 0, 0, 0.07);
+
+// Transitions
+$tr-button-opacity: .2s ease-in-out;
+
+// Sizes
+$phone: 375px;
+$largePhone: 475px;
+$tablet: 768px;
+$largeTablet: 1024px;
+$desktop: 1200px;
+$largeDesktop: 1440px;
+
+// Fonts
+$ffMain: RobotoCondensed, Arial, serif;
+$ffSec: Roboto, Arial, serif;
+
+$base-font-size: 10px;
+$base-font-size-large-phone: 10px;
+$base-font-size-tablet: 12px;
+$base-font-size-large-tablet: 14px;
+$base-font-size-desktop: 16px;
+$base-font-weight: 400;
+
+// $fzH1: 3rem;
+// $fzH2: 3rem;
+// $fzH3: 1.5rem;
+// $fzH4: 1.2rem;
+// $fzH5: 1.25rem;
+// $fzH6: 1rem;
+$fzPar: 1rem;
+// $fzNavLink: 14px;
+
+// $lhH1: 4rem;
+// $lhH2: 4rem;
+// $lhH3: 2rem;
+// $lhH4: 1.5rem;
+// $lhH5: 1.5rem;
+// $lhH6: 1.5rem;
+$lhPar: 1.5rem;
