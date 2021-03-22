@@ -42,7 +42,7 @@
           </button>
           <button
             class="single-report-route__button single-report-route__button--orange"
-            @click="$router.push({ name: 'ReportsRoute' })"
+            @click="cancelEdits()"
           >
             Отменить редактирование
           </button>
@@ -60,7 +60,7 @@
           type="text"
           class="form__input"
           v-model.trim="form.author"
-          :disabled="id"
+          :disabled="id ? true : false"
         >
         <p class="form__label">Время прохождения (мин.):</p>
         <input
